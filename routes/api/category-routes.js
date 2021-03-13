@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { createQuery } = require('mysql2/typings/mysql/lib/Connection');
+// const { createQuery } = require('mysql2/typings/mysql/lib/Connection');
 const { Category, Product } = require('../../models');
 
 
@@ -68,11 +68,16 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
-  Category.update({
-    where: {
-      id: req.params.id
+  Category.update(
+    {
+      category_name: req.body.category_name
+    },
+    {
+      where: {
+        id: req.params.id
+      }
     }
-  })
+  )
   .then(dbCategoryData => {
     if (!dbCategoryData[0]) {
       res.status(404).json({ message: 'No category found with this id' });
