@@ -10,7 +10,7 @@ This app is the back end of an e-commerce site. There are API GET, PUT, POST and
 clone the code in the repository, run npm init, install express, mysql2 and dotenv, add your MySQL username and password to a .env file, source and seed the database and run npm start. You can test all of the associated API routes on Insomnia.
 
 # links
-view the repository [here](github.com/meaghancampbell/e-commerce-back-end) and the video [here]().
+view the repository [here](github.com/meaghancampbell/e-commerce-back-end) and the video [here](https://drive.google.com/file/d/1LT1KuENP7u6ZfFBXuc2LT2meNMpLHo77/view).
 
 # credits
 Meaghan Campbell
